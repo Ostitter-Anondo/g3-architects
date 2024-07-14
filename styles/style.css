@@ -1,0 +1,119 @@
+/* colors */
+.dark1{
+    color: #131313;
+}
+.dark2{
+    color: #424242;
+}
+.dark3{
+    color: #727272;
+}
+
+/* shared */
+a{
+    text-decoration: none;
+}
+.btn-primary{
+    color: white;
+    background-color: #ff900e;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.text-desc{
+    font-size: 1rem;
+    color: #727272;
+}
+
+/* ****** */
+/* header */
+/* ****** */
+header{
+    background-color: #ff8f0e1a;
+}
+
+/* navbar */
+nav li{
+    list-style: none;
+    color: #424242;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav ul{
+    display: flex;
+    width: 20%;
+    gap: 20px;
+    justify-content: space-between;
+    grid-area: nav-links;
+}
+nav{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.brand{
+    font-size: 2.8rem;
+    color: #131313;
+    grid-area: brand; 
+}
+
+/* banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.banner-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    margin-bottom: 0px;
+    color: #131313;
+}
+.banner-img{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+
+/* for phones */
+@media screen and (max-width: 576px){
+    nav{
+        display: grid;
+        height: fit-content;
+        grid-template-areas:
+        "brand"
+        "nav-links";
+        gap: 20px;;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto 0 auto 0;
+    }
+    .brand{
+        font-size: 1.8rem;
+        margin: 20px auto;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-img{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+}
