@@ -19,6 +19,7 @@ a{
     font-size: 1.5rem;
     padding: 15px 20px;
     border-radius: 8px;
+    max-width: fit-content;
 }
 .text-desc{
     font-size: 1rem;
@@ -88,10 +89,33 @@ nav{
     margin-bottom: 20px;
 }
 
+/* ******* */
+/* quickie */
+/* ******* */
+.quick{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75vw;
+    gap: 80px;
+    margin: 50px auto;
+}
+.quick-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.quick-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    max-width: 85%;
+}
 
 
 /* for phones */
 @media screen and (max-width: 576px){
+    /* banner area */
     nav{
         display: grid;
         height: fit-content;
@@ -115,5 +139,22 @@ nav{
     .banner-img{
         width: 95%;
         margin-bottom: 10px;
+    }
+
+    /* quickie */
+    .quick{
+        grid-template-columns: 1fr;
+        margin: 50px auto;
+        gap: 0;
+        width: 90vw;
+    }
+    .quick-img{
+        gap: 10px;
+    }
+    .quick-img>img{
+        width: 44vw;
+    }
+    .quick-txt{
+        margin: auto;
     }
 }
