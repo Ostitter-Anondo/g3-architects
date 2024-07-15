@@ -21,6 +21,9 @@ a{
     border-radius: 8px;
     max-width: fit-content;
 }
+.btn-primary:hover{
+    background-color: #ffb765;
+}
 .text-desc{
     font-size: 1rem;
     color: #727272;
@@ -159,6 +162,12 @@ nav{
     position: absolute;
     bottom: -60px;
     left: 0px;
+    color: white;
+    background-color: #ff900e;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 8px;
+    max-width: fit-content;
 }
 
 /* ******** */
