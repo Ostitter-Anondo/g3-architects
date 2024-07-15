@@ -135,7 +135,7 @@ nav{
     grid-template-columns: 1fr;
 }
 .ft-card{
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     margin: 10px;
     padding: 0 20px;
     border-radius: 8px;
@@ -172,11 +172,15 @@ nav{
     max-width: 40%;
     margin: 100px 0;
 }
-.fact-cards{
+.fact-cards>div{
     display: flex;
-    max-width: 90%;
+    justify-content: center;
+}
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
     margin: auto;
-    justify-content: space-between;
 }
 .fact-card{
     height: 242px;
@@ -317,14 +321,20 @@ nav{
         max-width: 100%;
         margin-bottom: 0px;
     }
+    .fact-card{
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+    .fact-card h3{
+        font-size: 32px;
+    }
+    .fact-card p{
+        font-size: 14px;
+    }
     .fact-cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 100%;
-        margin: 0px;
-        gap: 20px;
-        transform: scale(0.7);
-        margin: -70px -13vw;
+        gap: 10px;
     }
 
     /* sponsors */
@@ -450,12 +460,21 @@ nav{
         max-width: 100%;
         margin-bottom: 0px;
     }
+    .fact-card{
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+    .fact-card h3{
+        font-size: 32px;
+    }
+    .fact-card p{
+        font-size: 14px;
+    }
     .fact-cards{
+        margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 100%;
-        margin: 20px auto;
-        gap: 20px;
+        gap: 30px;
     }
 
     /* sponsors */
