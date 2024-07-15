@@ -200,6 +200,41 @@ nav{
     margin: 0px;
 }
 
+/* ****** */
+/* footer */
+/* ****** */
+
+.sponsors{
+    max-width: 75vw;
+    margin: auto auto 100px;
+}
+.spons-txt{
+    text-align: center;
+    max-width: 40%;
+    margin: auto auto 50px;
+}
+.spons-img{
+    display: flex;
+    justify-content: space-between;
+}
+.spons-img img{
+    filter: grayscale(1);
+}
+
+.copyright{
+    max-width: calc(75vw - 50px);
+    margin: auto auto 100px;
+    border-radius: 8px;
+    background-color: #ff8f0e1a;
+    padding: 20px 50px;
+}
+.copyright-txt{
+    color: #424242;
+    text-align: center;
+    font-size: 20px;
+}
+
+
 /* for phones */
 @media screen and (max-width: 576px){
     /* banner area */
@@ -290,6 +325,176 @@ nav{
         gap: 20px;
         transform: scale(0.7);
         margin: -70px -13vw;
-        
+    }
+
+    /* sponsors */
+    .sponsors{
+        max-width: 90vw;
+        margin: auto auto 100px;
+    }
+    .spons-txt{
+        text-align: center;
+        max-width: 100%;
+        margin: auto auto 50px;
+    }
+
+    .spons-img img{
+        max-width: 50%;
+    }
+    .spons-img div{
+        text-align: center;
+    }
+    #spotify{
+        grid-area: spotify;
+    }
+    #amazon{
+        grid-area: amazon;
+    }
+    #google{
+        grid-area: google;
+    }
+    #telerama{
+        grid-area: telerama;
+    }
+    #figma{
+        grid-area: figma;
+    }
+    .spons-img{
+        display: grid;
+        grid-template-areas:
+        "spotify amazon google"
+        "telerama . figma";
+        row-gap: 30px;
+    }
+}
+
+/* for tablets */
+@media screen and (max-width: 992px) and (min-width: 577px){
+    /* banner area */
+    nav{
+        display: grid;
+        height: fit-content;
+        grid-template-areas:
+        "brand"
+        "nav-links";
+        gap: 20px;;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto 0 auto 0;
+    }
+    .brand{
+        font-size: 1.8rem;
+        margin: 20px auto;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-img{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    /* quickie */
+    .quick{
+        grid-template-columns: 1fr;
+        margin: 50px auto;
+        gap: 20px;
+        width: 80vw;
+    }
+    .quick-img{
+        gap: 10px;
+    }
+    .quick-img>img{
+        width: calc(40vw - 10px);
+    }
+    .quick-txt>h3{
+        margin: 0;
+    }
+
+    /* features */
+    .features{
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+        gap: 50px;
+        margin-bottom: 0px;
+    }
+    .feature-txt{
+        max-width: 100%;
+    }
+    .feature-img{
+        max-width: 100%;
+    }
+    #ft-img{
+        margin: auto;
+        position: relative;
+        max-width: 60vw;
+        left: 40px;
+    }
+    #exp-block{
+        left: -40px;
+    }
+
+    /* factoids */
+    .facts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 85vw;
+        margin-top: 0px;
+    }
+    .fact-txt{
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+    .fact-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    /* sponsors */
+    .sponsors{
+        max-width: 90vw;
+        margin: auto auto 100px;
+    }
+    .spons-txt{
+        text-align: center;
+        max-width: 100%;
+        margin: auto auto 50px;
+    }
+
+    .spons-img img{
+        max-width: 50%;
+    }
+    .spons-img div{
+        text-align: center;
+    }
+    #spotify{
+        grid-area: spotify;
+    }
+    #amazon{
+        grid-area: amazon;
+    }
+    #google{
+        grid-area: google;
+    }
+    #telerama{
+        grid-area: telerama;
+    }
+    #figma{
+        grid-area: figma;
+    }
+    .spons-img{
+        display: grid;
+        grid-template-areas:
+        "spotify amazon google"
+        "telerama . figma";
+        row-gap: 30px;
     }
 }
